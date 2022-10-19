@@ -23,28 +23,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="horizontal">
-
-                <Spinner
-                    android:id="@+id/spinner"
-                    android:layout_width="290dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/bg_spinner"
-                    android:entries="@array/spinnerItems"
-                    android:textAlignment="center" />
-
-                <View
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginLeft="5dp"
-                    android:background="@drawable/search"/>
-            </LinearLayout>
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -69,16 +47,18 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/name1"
                             android:layout_width="240dp"
                             android:layout_height="50dp"
                             android:fontFamily="sans-serif"
                             android:padding="5dp"
-                            android:text="Condor"
+                            android:text=""
                             android:textColor="@color/black"
                             android:textFontWeight="700"
                             android:textSize="28dp" />
 
                         <TextView
+                            android:id="@+id/family1"
                             android:layout_width="match_parent"
                             android:layout_height="25dp"
                             android:layout_marginRight="10dp"
@@ -96,6 +76,7 @@
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img1"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_marginLeft="10dp"
@@ -103,10 +84,11 @@
                             android:src="@drawable/condor_profile" />
 
                         <TextView
+                            android:id="@+id/descrp1"
                             android:layout_width="match_parent"
                             android:layout_height="90dp"
                             android:padding="8dp"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus nisi, faucibus sit amet nibh vel, tristique placerat felis."
+                            android:text=""
                             android:textColor="@color/black" />
                     </LinearLayout>
                 </LinearLayout>
@@ -136,6 +118,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/name2"
                             android:layout_width="240dp"
                             android:layout_height="50dp"
                             android:fontFamily="sans-serif"
@@ -146,6 +129,7 @@
                             android:textSize="28dp" />
 
                         <TextView
+                            android:id="@+id/family2"
                             android:layout_width="match_parent"
                             android:layout_height="25dp"
                             android:layout_marginRight="10dp"
@@ -170,10 +154,11 @@
                             android:src="@drawable/momotoserrano_profile" />
 
                         <TextView
+                            android:id="@+id/descrp2"
                             android:layout_width="match_parent"
                             android:layout_height="90dp"
                             android:padding="8dp"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus nisi, faucibus sit amet nibh vel, tristique placerat felis."
+                            android:text=""
                             android:textColor="@color/black" />
                     </LinearLayout>
                 </LinearLayout>
@@ -203,22 +188,24 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/name3"
                             android:layout_width="240dp"
                             android:layout_height="50dp"
                             android:fontFamily="sans-serif"
                             android:padding="5dp"
-                            android:text="Quetzal Dorado"
+                            android:text=""
                             android:textColor="@color/black"
                             android:textFontWeight="700"
                             android:textSize="28dp" />
 
                         <TextView
+                            android:id="@+id/family3"
                             android:layout_width="match_parent"
                             android:layout_height="25dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/etiqueta"
                             android:fontFamily="sans-serif"
-                            android:text="Trogonidae"
+                            android:text=""
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textFontWeight="600" />
@@ -237,10 +224,11 @@
                             android:src="@drawable/quetzaldorado_profile" />
 
                         <TextView
+                            android:id="@+id/descrp3"
                             android:layout_width="match_parent"
                             android:layout_height="90dp"
                             android:padding="8dp"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus nisi, faucibus sit amet nibh vel, tristique placerat felis."
+                            android:text=""
                             android:textColor="@color/black" />
                     </LinearLayout>
                 </LinearLayout>
@@ -252,7 +240,7 @@
                 android:layout_marginTop="15dp"
                 android:outlineAmbientShadowColor="@color/white"
                 android:outlineSpotShadowColor="@color/white"
-                app:cardBackgroundColor="@color/green"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="1dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -270,22 +258,24 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/name4"
                             android:layout_width="240dp"
                             android:layout_height="50dp"
                             android:fontFamily="sans-serif"
                             android:padding="5dp"
-                            android:text="Condor"
+                            android:text=""
                             android:textColor="@color/black"
                             android:textFontWeight="700"
                             android:textSize="32dp" />
 
                         <TextView
+                            android:id="@+id/family4"
                             android:layout_width="match_parent"
                             android:layout_height="25dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/etiqueta"
                             android:fontFamily="sans-serif"
-                            android:text="Depredador"
+                            android:text=""
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textFontWeight="400" />
@@ -301,13 +291,14 @@
                             android:layout_height="80dp"
                             android:layout_marginLeft="10dp"
                             android:onClick="onClick"
-                            android:src="@drawable/condor_profile" />
+                            android:src="@drawable/img4" />
 
                         <TextView
+                            android:id="@+id/descrp4"
                             android:layout_width="match_parent"
                             android:layout_height="90dp"
                             android:padding="8dp"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus nisi, faucibus sit amet nibh vel, tristique placerat felis."
+                            android:text=""
                             android:textColor="@color/black" />
                     </LinearLayout>
                 </LinearLayout>
@@ -337,22 +328,24 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/name5"
                             android:layout_width="240dp"
                             android:layout_height="50dp"
                             android:fontFamily="sans-serif"
                             android:padding="5dp"
-                            android:text="Condor"
+                            android:text=""
                             android:textColor="@color/black"
                             android:textFontWeight="700"
                             android:textSize="32dp" />
 
                         <TextView
+                            android:id="@+id/family5"
                             android:layout_width="match_parent"
                             android:layout_height="25dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/etiqueta"
                             android:fontFamily="sans-serif"
-                            android:text="Depredador"
+                            android:text=""
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textFontWeight="600" />
@@ -368,18 +361,438 @@
                             android:layout_height="80dp"
                             android:layout_marginLeft="10dp"
                             android:onClick="onClick"
-                            android:src="@drawable/condor_profile" />
+                            android:src="@drawable/img5" />
 
                         <TextView
+                            android:id="@+id/descrp5"
                             android:layout_width="match_parent"
                             android:layout_height="90dp"
                             android:padding="8dp"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus nisi, faucibus sit amet nibh vel, tristique placerat felis."
+                            android:text=""
                             android:textColor="@color/black" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name6"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="sans-serif"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textFontWeight="700"
+                            android:textSize="28dp" />
+
+                        <TextView
+                            android:id="@+id/family6"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/etiqueta"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textFontWeight="600" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/img6" />
+
+                        <TextView
+                            android:id="@+id/descrp6"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name7"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="sans-serif"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textFontWeight="700"
+                            android:textSize="32dp" />
+
+                        <TextView
+                            android:id="@+id/family7"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/etiqueta"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/img7" />
+
+                        <TextView
+                            android:id="@+id/descrp7"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardBackgroundColor="@color/green"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name8"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="sans-serif"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textFontWeight="700"
+                            android:textSize="32dp" />
+
+                        <TextView
+                            android:id="@+id/family8"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/etiqueta"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textFontWeight="600" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/img8" />
+
+                        <TextView
+                            android:id="@+id/descrp8"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name9"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="sans-serif"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textFontWeight="700"
+                            android:textSize="28dp" />
+
+                        <TextView
+                            android:id="@+id/family9"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/etiqueta"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textFontWeight="600" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/img9" />
+
+                        <TextView
+                            android:id="@+id/descrp9"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name10"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="sans-serif"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textFontWeight="700"
+                            android:textSize="32dp" />
+
+                        <TextView
+                            android:id="@+id/family10"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/etiqueta"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textFontWeight="400" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/img10" />
+
+                        <TextView
+                            android:id="@+id/descrp10"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardBackgroundColor="@color/green"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name11"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="sans-serif"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textFontWeight="700"
+                            android:textSize="32dp" />
+
+                        <TextView
+                            android:id="@+id/family11"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/etiqueta"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textFontWeight="600" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/img11" />
+
+                        <TextView
+                            android:id="@+id/descrp11"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </ScrollView>
